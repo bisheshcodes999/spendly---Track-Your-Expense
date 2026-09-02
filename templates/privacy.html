@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-section">
+    <div class="legal-container">
+
+        <div class="legal-header">
+            <span class="legal-badge">Legal</span>
+            <h1 class="legal-title">Privacy Policy</h1>
+            <p class="legal-updated">Last updated: September 2, 2026</p>
+        </div>
+
+        <div class="legal-card legal-body">
+
+            <p>
+                This Privacy Policy explains how Spendly ("we", "us") collects, uses, stores,
+                and protects your information when you use the Spendly website and application
+                (the "Service"). By using the Service, you agree to the practices described here.
+            </p>
+
+            <h2>1. Information we collect</h2>
+            <p>We collect the following categories of information:</p>
+            <ul>
+                <li><strong>Account information</strong> — your name, email address, and password (stored as a salted hash, never in plain text).</li>
+                <li><strong>Expense data</strong> — the amounts, categories, dates, and descriptions you enter to track your spending.</li>
+                <li><strong>Usage data</strong> — basic technical information such as browser type, device information, and pages visited, used to keep the Service working correctly.</li>
+                <li><strong>Cookies</strong> — small files used to keep you signed in and remember your preferences. See Section 6.</li>
+            </ul>
+
+            <h2>2. How we use your information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Create and maintain your account.</li>
+                <li>Provide the core functionality of the Service — recording, categorizing, and summarizing your expenses.</li>
+                <li>Authenticate you and keep your account secure.</li>
+                <li>Diagnose technical issues and improve the Service.</li>
+                <li>Communicate with you about your account or important changes to the Service.</li>
+            </ul>
+
+            <h2>3. How we do not use your information</h2>
+            <p>
+                We do not sell your personal information or expense data to third parties. We do
+                not use your financial data to serve you targeted third-party advertising.
+            </p>
+
+            <h2>4. Data storage and security</h2>
+            <p>
+                Your data is stored in a database associated with your account and is accessible
+                only to you when authenticated. We apply reasonable technical safeguards —
+                including password hashing and access controls — to protect your information.
+                However, no method of storage or transmission over the internet is 100% secure,
+                and we cannot guarantee absolute security.
+            </p>
+
+            <h2>5. Data sharing</h2>
+            <p>
+                We do not share your personal information with third parties except:
+            </p>
+            <ul>
+                <li>With service providers who help us operate the Service (e.g. hosting), under obligations to protect your data.</li>
+                <li>When required to comply with applicable law, regulation, or legal process.</li>
+                <li>To protect the rights, property, or safety of Spendly, our users, or the public.</li>
+            </ul>
+
+            <h2>6. Cookies</h2>
+            <p>
+                We use essential cookies to maintain your login session. These are necessary for
+                the Service to function and are not used for cross-site tracking or advertising.
+            </p>
+
+            <h2>7. Your rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the personal data and expense records associated with your account.</li>
+                <li>Correct inaccurate account information at any time.</li>
+                <li>Export your expense data.</li>
+                <li>Delete your account and associated data, subject to any legal retention requirements.</li>
+            </ul>
+            <p>
+                To exercise any of these rights, contact us through the support channel listed
+                in the app.
+            </p>
+
+            <h2>8. Data retention</h2>
+            <p>
+                We retain your account and expense data for as long as your account remains
+                active. If you delete your account, we will delete or anonymize your personal
+                data within a reasonable period, except where retention is required by law.
+            </p>
+
+            <h2>9. Children's privacy</h2>
+            <p>
+                The Service is not directed to individuals under the age of 18, and we do not
+                knowingly collect personal information from children. If you believe a child has
+                provided us with personal information, please contact us so we can remove it.
+            </p>
+
+            <h2>10. Changes to this policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. If we make material
+                changes, we will update the "Last updated" date above and, where appropriate,
+                notify you through the Service.
+            </p>
+
+            <h2>11. Contact</h2>
+            <p>
+                If you have questions about this Privacy Policy or how your data is handled,
+                please contact us through the support channel listed in the app.
+            </p>
+
+        </div>
+
+        <a href="{{ url_for('landing') }}" class="legal-back">← Back to Spendly</a>
+    </div>
+</section>
+
+{% endblock %}
